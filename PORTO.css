@@ -1,7 +1,7 @@
 body{ 
-    background-image: url(https://i.pinimg.com/originals/99/8e/05/998e055aba57c24138220937cc5166ab.gif);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/503/469/209/8-bit-city-buildings-artist-wallpaper-preview.jpg);
     background-position: center;
-    background-size: 145%;
+    background-size: 50%;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     margin: 0;
@@ -39,7 +39,7 @@ body{
     color: #FBDF07;
   }
     
-  .active {
+  .porto {
     color: #FBDF07;
   }
   
@@ -52,7 +52,7 @@ body{
     width:75%;
     max-width: 200px;
     height: auto;
-    border-radius: 10%;
+    border-radius: 50%;
   }
   
   .content1 {
@@ -94,20 +94,22 @@ body{
   }
   
   .card {
-    background-color: #0d486d;
+    background-color: #ffd607;
     transition: 0.3s;
     width: 300px;
-    min-height: 350px;
+    min-height: 300px;
     padding: 32px;
     margin: 81px 0;
-    border-radius: 2%;
+    border-radius: 5%;
     text-align: center;
   }
   
   .card:hover {
-    background-color: #f700ff;
-    scale: 1.1;
-    transition: 1.5s;
+    background-color: #000000;
+  }
+
+  .card img {
+    border-radius: 10%;
   }
   
   .content3 {

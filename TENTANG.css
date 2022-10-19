@@ -100,6 +100,7 @@ body{
     min-height: 350px;
     padding: 32px;
     margin: 81px 0;
+    border-radius: 5%;
     text-align: center;
   }
   
