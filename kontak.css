@@ -1,7 +1,7 @@
 body{ 
-  background-image: url(https://i.pinimg.com/originals/9f/92/6c/9f926c8c220127d81c8ba6897aa8d5db.gif);
+  background-image: url(https://wallpapercrafter.com/sizes/2560x1440/95202-8-bit-artist-artwork-digital-art-hd-4k.jpg);
   background-position: center;
-  background-size: 150%;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   margin: 0;
@@ -95,7 +95,7 @@ mark{
 }
 
 .card {
-  background-color: #06283D;
+  background-color: #e16919;
   transition: 0.3s;
   width: 300px;
   min-height: 350px;
@@ -106,7 +106,7 @@ mark{
 }
 
 .card:hover {
-  background-color: #3B9AE1;
+  background-color: #ffb300;
 }
 
 .content3 {
