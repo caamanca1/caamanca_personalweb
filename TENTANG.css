@@ -106,6 +106,9 @@ body{
   
   .card:hover {
     background-color: #3B9AE1;
+    transition: 0.5s;
+    scale: 1.1;
+
   }
   
   .content3 {

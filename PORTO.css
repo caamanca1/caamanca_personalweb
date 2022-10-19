@@ -94,7 +94,7 @@ body{
   }
   
   .card {
-    background-color: #ffd607;
+    background-color: #e44d7d;
     transition: 0.3s;
     width: 300px;
     min-height: 300px;
@@ -105,7 +105,7 @@ body{
   }
   
   .card:hover {
-    background-color: #000000;
+    background-color: #ff8e59;
   }
 
   .card img {
