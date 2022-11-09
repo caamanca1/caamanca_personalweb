@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;     
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(https://64.media.tumblr.com/cefc3c92f7a350f0852b33fdc503b1fb/tumblr_o8xixl9weH1u77u56o1_1280.gif);
+
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 190px;    
+    /* height: 450px;           */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    margin: 35px;
+    display: inline-block;
+}       
+
+.card:hover{
+    height: 450px;
+}
+
+.imageBox {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;      
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;       
+    transition: 0.5s;
+}       
+.card:hover .imageBox{      
+    width: 250px;       
+    height: 250px;
+}
+
+
+.imageBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}    
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;   
+}
+
+.card .content .details {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: 00.5s;              
+    transform: translateY(150px);
+}
+
+.card:hover .content .details {
+    transform: translateY(0px); 
+}
+
+.card .content .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .data {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .content .details .data h3 {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: auto;
+}
+
+.card .content .details .data h3 span {
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}       
+
+.card .content .details .actionBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .content .details .actionBtn button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;      
+    cursor: pointer;
+}       
+
+.card .content .details .actionBtn button:nth-child(2) {
+
+    border: 1px solid #999;
+    color: #999;
+    background: #fff;   
+
+}   
+
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #fff;
+    border-radius: 2px;
+    animation: loader 3s infinite ease;
+
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+    animation: loader-inner 3s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+         transform: rotate(0deg);
+    }
+    25% {
+         transform: rotate(180deg);
+    }
+    50% { 
+         transform: rotate(180deg);
+    }
+    75% { 
+         transform: rotate(360deg);
+    }
+    100% { 
+         transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% { 
+        height: 0%;
+    }
+    25% { 
+        height: 0%;
+    }
+    50% { 
+        height: 100%;
+    }
+    75% { 
+        height: 100%;
+    }
+    100% { 
+        height: 0%;
+    }
+}
